@@ -8,6 +8,9 @@
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
+body{
+    background-color: #000;
+}
 
 .header {
     width: 100%;
@@ -83,7 +86,7 @@
     width: 100%;
     border-radius: 25px;
     padding: 15px;
-    border: 1px solid rgb(245, 21, 21);
+    border: 2px solid rgb(245, 21, 21);
     outline: none;
 }
 
@@ -105,7 +108,6 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    padding: 100px;
     background-color: black;
     color: #fff;
 }
@@ -127,9 +129,10 @@
 }
 
 .about-me aside p {
-    text-align: justify;
-    line-height: 35px;
+    line-height: 2rem;
     margin-bottom: 2rem;
+    font-size: .9rem;
+    color: rgb(165, 104, 223);
 }
 
 .about-me aside div {
@@ -204,4 +207,58 @@
 }
 .box div:hover{
     background: none;
+}
+/* section Three */
+.section-three{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.field-1 div{
+    width: fit-content;
+    padding: 7px 20px;
+    background-color: rgb(245, 21, 21);
+    border: 3px solid rgb(245, 21, 21);
+    border-radius: 25px;
+    box-shadow: -3px 2px 3px rgba(20, 20, 20, 0.726);
+    cursor: pointer;
+    transition: .5s;
+    margin: 1.5rem auto;
+}
+.field-1 div:hover{
+    background: none;
+}
+.field-2{
+    display: flex; gap:1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.field-2 p{
+    font-size: .9rem;
+    color: rgb(165, 104, 223);
+    width: 30rem;
+    line-height: 2rem
+}
+.field-2 .sci{
+    display: flex;
+    gap:1rem
+}
+.field-2 .sci div{
+    background-color: rgb(245, 21, 21);
+    border-radius: 50%;
+    width: 3rem; height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+footer{
+    text-align: center;
+}
+footer span{
+    color: rgb(245, 21, 21);
 }
