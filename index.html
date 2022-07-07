@@ -11,6 +11,15 @@
 </head>
 
 <body>
+    <div class="links responsive-menu ">
+        <i class="fa-solid fa-xmark" id="menu-close"></i>
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Services</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact us</a>
+        <div class="responsive-subscribe">Subscribe</div>
+    </div>
     <header class="header">
         <div class="logo">
             <h1>Portfo<span>lio</span></h1>
@@ -23,6 +32,9 @@
             <a href="#">Contact us</a>
         </div>
         <div class="subscribe">Subscribe</div>
+        <div id="menu-open">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
 
     <div class="backgrond-main">
@@ -34,6 +46,7 @@
             <div>let's start</div>
         </div>
     </div>
+
 
     <section class="about-me">
         <img src="/img/main-img.png" alt="">
@@ -57,19 +70,22 @@
             <div class="box">
                 <i class="fa-solid fa-bars"></i>
                 <h3>Web Development</h3>
-                <p>Every website should be built with two primary goals: Firstly, it needs work across all devices. Secondly, it needs to be fast as passible.</p>
+                <p>Every website should be built with two primary goals: Firstly, it needs work across all devices.
+                    Secondly, it needs to be fast as passible.</p>
                 <div>Read More</div>
             </div>
             <div class="box">
                 <i class="fa-solid fa-user"></i>
                 <h3>Web Development</h3>
-                <p>Every website should be built with two primary goals: Firstly, it needs work across all devices. Secondly, it needs to be fast as passible.</p>
+                <p>Every website should be built with two primary goals: Firstly, it needs work across all devices.
+                    Secondly, it needs to be fast as passible.</p>
                 <div>Read More</div>
             </div>
             <div class="box">
                 <i class="fa-regular fa-bell"></i>
                 <h3>Web Development</h3>
-                <p>Every website should be built with two primary goals: Firstly, it needs work across all devices. Secondly, it needs to be fast as passible.</p>
+                <p>Every website should be built with two primary goals: Firstly, it needs work across all devices.
+                    Secondly, it needs to be fast as passible.</p>
                 <div>Read More</div>
             </div>
         </div>
@@ -86,7 +102,7 @@
             <h1>Tiago da Silva</h1>
             <p>For more HTML, CSS and coding tutorial, please click on the link below to subscribe to my channel:</p>
             <div class="sci">
-                <div    >
+                <div>
                     <i class="fa-brands fa-facebook-f"></i>
                 </div>
                 <div>
@@ -97,13 +113,23 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
-    
+
     <footer>
         <span>Copyright By Tiago da Silva &COPY;</span>
     </footer>
-    
+
+    <script>
+        let responsiveMenu = document.querySelector('.responsive-menu')
+        let menuOpen = document.querySelector('#menu-open').addEventListener('click', ()=> {
+            responsiveMenu.setAttribute('style', "display: flex")
+        })
+        let menuClose = document.querySelector('#menu-close').addEventListener('click', ()=> {
+            responsiveMenu.removeAttribute('style', "display: flex")
+        })
+    </script>
+
 </body>
 
 </html>
